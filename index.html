@@ -1,1 +1,5 @@
-echo "this is a test"
+#clone repo
+git clone https://gitlab.com/nettijoe96/raspberry-pi-architecture.git ../
+#run dhcp request and setup static ip
+sudo python3 staticIP.py
+mv ../raspberry-pi-architecture/mydhcpcd.conf /etc/dhcpcd.conf
