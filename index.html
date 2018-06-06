@@ -1,5 +1,11 @@
 #clone repo
 git clone https://gitlab.com/nettijoe96/raspberry-pi-architecture.git ~/raspberry-pi-architecture
+sudo apt-get install python3
+sudo apt-get install python3-pip
+sudo apt-get install docker.io
+sudo pip3 install cryptography
+sudo pip3 install pyopenssl
+sudo pip3 install pickle
 #run dhcp request and setup static ip
 sudo python3 staticIP.py
 mv ~/raspberry-pi-architecture/mydhcpcd.conf /etc/dhcpcd.conf
